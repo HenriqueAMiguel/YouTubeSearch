@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{877F61B0-51FD-475A-B392-5173F258AA17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fontes", "Fontes", "{CB0BD865-64CC-4683-91E4-06B022DF6202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeSearch.Service", "YouTubeSearch.Service\YouTubeSearch.Service.csproj", "{94197292-F81F-4D01-A376-43C41CA48EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeSearch.Page", "YouTubeSearch.Page\YouTubeSearch.Page.csproj", "{AB8E069B-8B25-4829-8C61-8A1E92EFCA73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeSearch.ViewModels", "YouTubeSearch.ViewModels\YouTubeSearch.ViewModels.csproj", "{64A76826-117B-4845-A897-49612B6C85B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94197292-F81F-4D01-A376-43C41CA48EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94197292-F81F-4D01-A376-43C41CA48EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94197292-F81F-4D01-A376-43C41CA48EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94197292-F81F-4D01-A376-43C41CA48EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8E069B-8B25-4829-8C61-8A1E92EFCA73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8E069B-8B25-4829-8C61-8A1E92EFCA73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8E069B-8B25-4829-8C61-8A1E92EFCA73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8E069B-8B25-4829-8C61-8A1E92EFCA73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A76826-117B-4845-A897-49612B6C85B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A76826-117B-4845-A897-49612B6C85B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A76826-117B-4845-A897-49612B6C85B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A76826-117B-4845-A897-49612B6C85B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94197292-F81F-4D01-A376-43C41CA48EF7} = {CB0BD865-64CC-4683-91E4-06B022DF6202}
+		{AB8E069B-8B25-4829-8C61-8A1E92EFCA73} = {877F61B0-51FD-475A-B392-5173F258AA17}
+		{64A76826-117B-4845-A897-49612B6C85B1} = {877F61B0-51FD-475A-B392-5173F258AA17}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C417B58D-76E6-4BD5-8C21-6A29A581A1D8}
+	EndGlobalSection
+EndGlobal
