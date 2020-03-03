@@ -12,15 +12,26 @@ namespace YouTubeSearch.Page.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly Service.YoutubeServices _youtubeServices;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            _youtubeServices = new Service.YoutubeServices();
         }
 
         public IActionResult Index()
         {
-            return View();
+            var model = new ViewModels.YouTubeRequestViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Index(ViewModels.YouTubeRequestViewModel model)
+        {
+            model.YouTubeResponse = _youtubeServices.BuscaVideos(model.Q);
+
+            return View(model);
         }
 
         public IActionResult Privacy()

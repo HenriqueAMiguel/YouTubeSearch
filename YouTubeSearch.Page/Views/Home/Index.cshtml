@@ -1,8 +1,43 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model YouTubeSearch.ViewModels.YouTubeRequestViewModel
+
+@{
+    ViewData["Title"] = "Pesquisa YouTube";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form asp-action="Index" method="post">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label asp-for="Q" class="control-label"></label>
+                <input asp-for="Q" class="form-control" placeholder="Digite sua pesquisa" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Pesquisar" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
+@if (Model.YouTubeResponse != null)
+{
+
+    <table class="table-bordered table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.YouTubeResponse.Items)
+            {
+                <tr>
+                    <td>
+                        <img src="@item.MediumThumbnailUrl">
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
