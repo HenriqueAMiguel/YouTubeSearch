@@ -18,7 +18,8 @@ namespace YouTubeSearch.Service
             var searchListRequest = youtubeService.Search.List("snippet");
             searchListRequest.Q = pesquisa;
             searchListRequest.Order = SearchResource.ListRequest.OrderEnum.Relevance;
-            searchListRequest.MaxResults = 10;
+            searchListRequest.MaxResults = 30;
+            searchListRequest.Type = "video";
 
             var searchListResponse = searchListRequest.Execute();
 

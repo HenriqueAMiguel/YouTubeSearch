@@ -19,25 +19,19 @@
 </form>
 @if (Model.YouTubeResponse != null)
 {
-
-    <table class="table-bordered table-hover table-responsive">
-        <thead>
-            <tr>
-                <th>
-
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.YouTubeResponse.Items)
-            {
-                <tr>
-                    <td>
-                        <img src="@item.MediumThumbnailUrl">
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="row">
+        @foreach (var item in Model.YouTubeResponse.Items)
+        {
+        <div class="card" style="width: 18rem; margin: 0 15px 15px 0">
+            <img class="card-img-top" src="@item.MediumThumbnailUrl" alt="@item.Title" />
+            <div class="card-body" style="padding: 15px">
+                <h5 class="card-title">@item.Title</h5>
+                <p class="card-text">@item.Description</p>
+                <a href="#" class="btn btn-primary">Salvar em Playlist</a>
+            </div>
+            <div class="card-footer">Publicado em: @item.PublishedAt</div>
+        </div>
+        }
+    </div>
 }
 
