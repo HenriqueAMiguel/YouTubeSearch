@@ -11,7 +11,7 @@ namespace YouTubeSearch.Service
         {
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
-                ApiKey = "AIzaSyAjlJ6cfXGmDnVJDDGMZoPi3kOIvOkHr_c",
+                ApiKey = "Chave aqui",
                 ApplicationName = "Chave de API 1"
             });
 

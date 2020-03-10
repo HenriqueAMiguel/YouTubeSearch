@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AWSSDK.ECS" Version="3.3.114.13" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\YouTubeSearch.Service\YouTubeSearch.Service.csproj" />
     <ProjectReference Include="..\YouTubeSearch.ViewModels\YouTubeSearch.ViewModels.csproj" />
   </ItemGroup>
